@@ -35,6 +35,7 @@ const PROJECTS = [
     status: "Finished",
     team: "3 People",
     challenges: "Server-client communication, AI behaviour, Abilities",
+    downloadUrl: "https://drive.google.com/drive/folders/1Ud_1GF2pg122JB9oQFr5DHXz74pSxnS9?usp=sharing",
     screenshots: [
       "Image/dofika-1.jpg",
       "Image/dofika-2.jpg",
