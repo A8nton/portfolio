@@ -331,6 +331,29 @@ button{ font-family: inherit; }
 .status-dot.finished{ background: var(--finished); box-shadow: 0 0 8px var(--finished); }
 .status-dot.prototype{ background: var(--prototype); box-shadow: 0 0 8px var(--prototype); }
 
+.download-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 9px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  transition: background .2s var(--ease), color .2s var(--ease), transform .2s var(--ease);
+}
+.download-btn:hover{
+  background: var(--accent);
+  color: #1A0F06;
+  transform: translateY(-1px);
+}
+.download-btn svg{ flex-shrink: 0; }
+
 /* ---- gallery ---- */
 .gallery{
   position: relative;
