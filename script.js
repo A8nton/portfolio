@@ -5,9 +5,25 @@
    No other code changes are required — the page renders
    everything below automatically.
 
-   category : "finished" | "prototype"
-   youtube  : any standard YouTube URL (watch / youtu.be / embed)
-   screenshots : array of image URLs (any size, will be cropped)
+   category    : "finished" | "prototype"
+   youtube     : any standard YouTube URL (watch / youtu.be / embed)
+   screenshots : array of paths to images inside the "Image" folder
+                 of this repo (e.g. "Image/voidrunner-1.jpg")
+   downloadUrl : OPTIONAL. Link to a downloadable build (zip, itch.io
+                 page, Google Drive link, etc). Omit the field entirely
+                 for projects that don't have a download.
+
+   NOTE ON IMAGES
+   All screenshot paths are relative to index.html, so keep every
+   image inside a folder named "Image" at the root of the repo:
+
+     /index.html
+     /styles.css
+     /script.js
+     /Image/voidrunner-1.jpg
+     /Image/voidrunner-2.jpg
+     /Image/hollow-keep-1.jpg
+     ...
 ========================================================= */
 const PROJECTS = [
   {
@@ -20,10 +36,10 @@ const PROJECTS = [
     team: "Solo Developer",
     challenges: "AI behavior, performance optimization, procedural level generation",
     screenshots: [
-      "https://picsum.photos/seed/voidrunner1/640/400",
-      "https://picsum.photos/seed/voidrunner2/640/400",
-      "https://picsum.photos/seed/voidrunner3/640/400",
-      "https://picsum.photos/seed/voidrunner4/640/400"
+      "Image/voidrunner-1.jpg",
+      "Image/voidrunner-2.jpg",
+      "Image/voidrunner-3.jpg",
+      "Image/voidrunner-4.jpg"
     ]
   },
   {
@@ -36,9 +52,9 @@ const PROJECTS = [
     team: "Team of 4 (Designer, 2 Programmers, Artist)",
     challenges: "Multiplayer netcode, save system architecture, art pipeline consistency",
     screenshots: [
-      "https://picsum.photos/seed/hollowkeep1/640/400",
-      "https://picsum.photos/seed/hollowkeep2/640/400",
-      "https://picsum.photos/seed/hollowkeep3/640/400"
+      "Image/hollow-keep-1.jpg",
+      "Image/hollow-keep-2.jpg",
+      "Image/hollow-keep-3.jpg"
     ]
   },
   {
@@ -51,8 +67,8 @@ const PROJECTS = [
     team: "Solo Developer",
     challenges: "Turn-based combat balancing, deterministic simulation, UI/UX for tactics grid",
     screenshots: [
-      "https://picsum.photos/seed/echotactics1/640/400",
-      "https://picsum.photos/seed/echotactics2/640/400"
+      "Image/echo-tactics-1.jpg",
+      "Image/echo-tactics-2.jpg"
     ]
   },
   {
@@ -64,10 +80,12 @@ const PROJECTS = [
     status: "Prototype",
     team: "Solo Developer",
     challenges: "Soft-body physics, vehicle handling feel, shader-based deformation",
+    // Example of a project with a downloadable build:
+    downloadUrl: "https://example.com/downloads/driftform-demo.zip",
     screenshots: [
-      "https://picsum.photos/seed/driftform1/640/400",
-      "https://picsum.photos/seed/driftform2/640/400",
-      "https://picsum.photos/seed/driftform3/640/400"
+      "Image/driftform-1.jpg",
+      "Image/driftform-2.jpg",
+      "Image/driftform-3.jpg"
     ]
   }
 ];
@@ -160,6 +178,15 @@ function renderProjectCard(project, index){
             <span class="stat-value">${escapeHtml(project.challenges)}</span>
           </li>
         </ul>
+
+        ${
+          project.downloadUrl
+            ? `<a class="download-btn" href="${escapeHtml(project.downloadUrl)}" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><polyline points="7 10 12 15 17 10"/><path d="M5 21h14"/></svg>
+                Download project
+              </a>`
+            : ""
+        }
       </div>
 
       <div class="gallery" aria-label="${escapeHtml(project.title)} screenshots">
