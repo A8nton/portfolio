@@ -51,7 +51,7 @@ const PROJECTS = [
     status: "Prototype / Finished",
     team: "Solo Developer",
     challenges: "None",
-    downloadUrl: "",
+    downloadUrl: "https://drive.google.com/drive/folders/1bFyM0iPQHdA8-XtC2pTRgKQVgr8mrzdV?usp=sharing",
     screenshots: [
       "Image/platprot-1.jpg",
       "Image/platprot-2.jpg",
@@ -67,7 +67,7 @@ const PROJECTS = [
     status: "Prototype / Finished",
     team: "Solo Developer",
     challenges: "Physics gun, Level boundaries, Softlock prevention",
-    downloadUrl: "",
+    downloadUrl: "https://drive.google.com/drive/folders/10k27gQBB2YPehX6T-yPM2SawLKh0tH_A?usp=sharing",
     screenshots: [
       "Image/tohof-1.jpg",
       "Image/tohof-2.jpg",
