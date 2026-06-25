@@ -43,49 +43,50 @@ const PROJECTS = [
     ]
   },
   {
-    id: "hollow-keep",
-    title: "Hollow Keep",
-    category: "finished",
-    youtube: "https://youtu.be/dQw4w9WgXcQ",
-    devDate: "June 2024 – November 2024",
-    status: "Finished",
-    team: "Team of 4 (Designer, 2 Programmers, Artist)",
-    challenges: "Multiplayer netcode, save system architecture, art pipeline consistency",
+    id: "platprot",
+    title: "Simple Platformer",
+    category: "prototype",
+    youtube: "https://youtu.be/ODhHp1o8gxg",
+    devDate: "June 7 2026 - June 7 2026 (3 hours)",
+    status: "Prototype / Finished",
+    team: "Solo Developer",
+    challenges: "None",
+    downloadUrl: "",
     screenshots: [
-      "Image/hollow-keep-1.jpg",
-      "Image/hollow-keep-2.jpg",
-      "Image/hollow-keep-3.jpg"
+      "Image/platprot-1.jpg",
+      "Image/platprot-2.jpg",
+      "Image/platprot-3.jpg"
     ]
   },
   {
-    id: "echo-tactics",
-    title: "Echo Tactics",
+    id: "tohof",
+    title: "The Other Half of Life",
     category: "prototype",
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    devDate: "April 2025 – Present",
-    status: "Prototype / In Progress",
+    youtube: "https://youtu.be/kx74-ZIa9qo",
+    devDate: "October 6 2025 – November 20 2025",
+    status: "Prototype / Finished",
     team: "Solo Developer",
-    challenges: "Turn-based combat balancing, deterministic simulation, UI/UX for tactics grid",
+    challenges: "Physics gun, Level boundaries, Softlock prevention",
+    downloadUrl: "",
     screenshots: [
-      "Image/echo-tactics-1.jpg",
-      "Image/echo-tactics-2.jpg"
+      "Image/tohof-1.jpg",
+      "Image/tohof-2.jpg",
+      "Image/tohof-3.jpg"
     ]
   },
   {
-    id: "driftform",
-    title: "Driftform",
+    id: "fnab",
+    title: "Five Nights at Bei's",
     category: "prototype",
-    youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    devDate: "February 2026",
-    status: "Prototype",
+    youtube: "https://youtu.be/_rhbNyP18JM",
+    devDate: "July 9 2025 - August 9 2025",
+    status: "Prototype / Postponed",
     team: "Solo Developer",
-    challenges: "Soft-body physics, vehicle handling feel, shader-based deformation",
-    // Example of a project with a downloadable build:
-    downloadUrl: "https://example.com/downloads/driftform-demo.zip",
+    challenges: "Enemies logic, Nights pacing, animations",
     screenshots: [
-      "Image/driftform-1.jpg",
-      "Image/driftform-2.jpg",
-      "Image/driftform-3.jpg"
+      "Image/fnab-1.jpg",
+      "Image/fnab-2.jpg",
+      "Image/fnab-3.jpg"
     ]
   }
 ];
