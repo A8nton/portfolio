@@ -88,11 +88,28 @@ const PROJECTS = [
     devDate: "July 9 2025 - August 9 2025",
     status: "Prototype / Postponed",
     team: "Solo Developer",
-    challenges: "Enemies logic, Nights pacing, animations",
+    challenges: "Enemies logic, Nights pacing, Animation sequences",
     screenshots: [
       "Image/fnab-1.jpg",
       "Image/fnab-2.jpg",
       "Image/fnab-3.jpg"
+    ]
+  },
+  {
+    id: "ttzh",
+    title: "Trip to Zhetomyr",
+    category: "finished",
+    tags: ["Horror", "Singleplayer", "World Generation", "Puzzle"],
+    youtube: "https://youtu.be/FpAtWIEtptY",
+    devDate: "October 5 2024 - February 7 2025",
+    status: "Finished",
+    team: "4 People",
+    challenges: "Level Generation, Puzzles, Items/Inventory",
+    downloadUrl: "https://drive.google.com/drive/folders/1rDHLWGrnrZZH4gP7rx2_i7NnJscaxthC?usp=sharing",
+    screenshots: [
+      "Image/ttzh-1.jpg",
+      "Image/ttzh-2.jpg",
+      "Image/ttzh-3.jpg"
     ]
   }
 ];
