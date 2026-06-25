@@ -6,6 +6,8 @@
    everything below automatically.
 
    category    : "finished" | "prototype"
+   tags        : array of short genre/feature labels shown under the
+                 project title (e.g. ["Strategy", "MOBA"])
    youtube     : any standard YouTube URL (watch / youtu.be / embed)
    screenshots : array of paths to images inside the "Image" folder
                  of this repo (e.g. "Image/voidrunner-1.jpg")
@@ -30,6 +32,7 @@ const PROJECTS = [
     id: "dofika",
     title: "DOFika",
     category: "finished",
+    tags: ["Roguelike", "Top-Down Shooter"],
     youtube: "https://youtu.be/nQApe8txxeo",
     devDate: "March 3 2026 – June 6 2026",
     status: "Finished",
@@ -140,6 +143,13 @@ function renderProjectCard(project, index){
       <div class="project-title-block">
         <p class="project-index">PROJECT_${orderNum}</p>
         <h2 class="project-title">${escapeHtml(project.title)}</h2>
+        ${
+          project.tags && project.tags.length
+          ? `<ul class="tag-list">
+            ${project.tags.map((tag) => `<li class="tag-pill">${escapeHtml(tag)}</li>`).join("")}
+            </ul>`
+         : ""
+        }
       </div>
       <div class="video-frame">
         ${
