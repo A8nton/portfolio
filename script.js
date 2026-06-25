@@ -27,19 +27,18 @@
 ========================================================= */
 const PROJECTS = [
   {
-    id: "voidrunner",
-    title: "Voidrunner",
+    id: "dofika",
+    title: "DOFika",
     category: "finished",
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    devDate: "January 2025 – March 2025",
+    youtube: "https://youtu.be/nQApe8txxeo",
+    devDate: "March 3 2026 – June 6 2026",
     status: "Finished",
-    team: "Solo Developer",
-    challenges: "AI behavior, performance optimization, procedural level generation",
+    team: "3 People",
+    challenges: "Server-client communication, AI behaviour, Abilities",
     screenshots: [
-      "Image/voidrunner-1.jpg",
-      "Image/voidrunner-2.jpg",
-      "Image/voidrunner-3.jpg",
-      "Image/voidrunner-4.jpg"
+      "Image/dofika-1.jpg",
+      "Image/dofika-2.jpg",
+      "Image/dofika-3.jpg"
     ]
   },
   {
